@@ -15,9 +15,7 @@ public class Demo1Predicate {
 
     public static void main(String[] args) {
         String s = "abcde";
-        boolean b = checkString(s, (String str) -> {
-            return str.length() > 5;
-        });
+        boolean b = checkString(s, str-> str.length() > 5);
         System.out.println(b);
     }
 }
